@@ -1,0 +1,573 @@
+﻿
+@{
+    ViewBag.Title = "WZ";
+}
+
+<h2>WZ</h2>
+
+<style>
+    .row-height
+    {
+        height: 50px
+    }
+
+    .srodektranportu-height, .zamowienie-height, .wysylka-height, .numer-i-data-height, .wydal-height, .data-height, .odebral-height
+    {
+        height: 30px;
+    }
+
+    .data-wystawienia-height, .numer-magazynowy-height
+    {
+        height: 22px;
+    }
+
+    .przeznaczenie-height, .data-wysylki-height, .egz
+    {
+        height: 50px
+    }
+
+    .egz-height, .numer-biezacy-height
+    {
+        height: 27px
+    }
+
+    .wystawil-height, .zatwierdzil-height, .ewidencja-height
+    {
+        height: 54px;
+    }
+
+
+    .center-text{
+        text-align: center;
+    }
+
+    .bold-text
+    {
+        font-weight: bold;
+    }
+
+    .div-full-heigth
+    {
+        height: 100%
+    }
+
+    .border-black
+    {
+        border: 1px solid black;
+    }
+
+    .div-black
+    {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .div-name
+    {
+        background-color: gray;
+        color: #000;
+        font-size: 14px;
+    }
+
+    .logo
+    {
+        height: 100px;
+        width: 100%;
+    }
+
+    .div-odbiorca
+    {
+        height: 153px;
+    }
+
+    .div-odbiorca-name
+    {
+        height: 80px;
+    }
+
+    .rotate
+    {
+        display: inline-block;
+        transform: rotate(-90deg) translate(-28px, -21px); 
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1px
+    }
+    .div-odbiorca-pola
+    {
+        height: 40px;
+    }
+
+    .wz
+    {
+        height: 100px;
+    }
+
+    .half-height
+    {
+        height: 50%;
+    }
+
+
+    .margin-left-footer {
+        margin-left: 10px; 
+    }
+
+    .margin-left-header {
+        margin-left: 5px; 
+    }
+
+    .margin-top-header {
+        margin-top: 5px; 
+    }
+
+    .gr
+    {
+        background-color: gray;
+    }
+</style>
+
+<div class="row no-gutters">
+    <div class="col-4">
+
+        <div class="row no-gutters">
+
+            <div class="logo">
+                LOGO
+            </div>
+
+        </div>
+
+        <div class="row no-gutters">
+
+            <div class="col-7">
+                <div class="margin-top-header">
+                    <div class="row no-gutters div-name border-black bold-text">
+                        Środek transportu
+                    </div>
+
+                    <div class="row no-gutters border-black black srodektranportu-height">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="margin-left-header margin-top-header">
+                    <div class="row no-gutters div-name border-black bold-text">
+                        Zamówienie
+                    </div>
+
+                    <div class="row no-gutters border-black zamowienie-height">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-4">
+        <div class="margin-left-header">
+            <div class="row no-gutters">
+
+                <div class="col-1 no-gutters div-black div-odbiorca-name">
+                    <span class="rotate">ODBIORCA</span>
+                </div>
+
+                <div class="col-11 no-gutters">
+                    <div class="row no-gutters border-black div-odbiorca-pola">
+
+                    </div>
+
+                    <div class="row no-gutters border-black div-odbiorca-pola">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters margin-top-header">
+
+                <div class="col-7">
+
+                    <div class="row no-gutters div-name border-black bold-text">
+                        Przeznaczenie
+                    </div>
+
+                    <div class="row no-gutters border-black przeznaczenie-height">
+
+                    </div>
+
+                </div>
+
+                <div class="col-5">
+                    <div class="margin-left-header">
+                        <div class="row no-gutters div-name border-black bold-text">
+                            Data wysyłki
+                        </div>
+
+                        <div class="row no-gutters border-black data-wysylki-height">
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4">
+        <div class="margin-left-header">
+            <div class="row no-gutters">
+
+                <div class="col-3 border-black wz div-black ">
+                    <div style="text-align: center; height: 20px; line-height: 42px">
+                        <font size="7">WZ</font>
+                    </div>
+                    <div style="text-align: center; height: 30px; line-height: 13px; margin-top:10px">
+                        <font size="2">
+                            <br />
+                            WYDANIE
+                            <br />
+                            MATERIAŁÓW
+                            <br />
+                            NA ZEWNĄTRZ
+                        </font>
+                    </div>
+                </div>
+                <div class="col-9 no-gutters">
+
+                    <div class="row no-gutters">
+
+                        <div class="col-5">
+                            <div class="margin-left-header">
+                                <div class="row no-gutters div-name border-black bold-text">
+                                    Egz.
+                                </div>
+
+                                <div class="row no-gutters border-black egz-height">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-7">
+                            <div class="margin-left-header">
+                                <div class="row no-gutters div-name border-black bold-text">
+                                    Numer bieżący
+                                </div>
+
+                                <div class="row no-gutters border-black numer-biezacy-height">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row egz no-gutters">
+
+                        <div class="col-5">
+                            <div class="margin-left-header margin-top-header">
+                                <div class="row no-gutters div-name border-black bold-text" style="font-size: 13px" >
+                                    Data wystawienia
+                                </div>
+
+                                <div class="row no-gutters border-black data-wystawienia-height">
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-7">
+                            <div class="margin-left-header margin-top-header">
+                                <div class="row no-gutters div-name border-black bold-text" style="font-size: 13px">
+                                    Numer magazynowy
+                                </div>
+
+                                <div class="row no-gutters border-black numer-magazynowy-height">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-4">
+                    <div class="margin-top-header">
+                        <div class="row no-gutters div-name border-black bold-text">
+                            Wysyłka na koszt
+                        </div>
+
+                        <div class="row no-gutters border-black wysylka-height">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-8">
+                    <div class="margin-top-header margin-left-header">
+                        <div class="row no-gutters div-name border-black bold-text">
+                            Numer i data faktury - specyfikacji
+                        </div>
+
+                        <div class="row no-gutters border-black numer-i-data-height">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="row no-gutters text-center my-2">
+    <div class="col-1">
+        <div class="div-black div-full-heigth" style="margin-right:1px">
+            Kod
+            <br />
+            tow.-mater.
+        </div>
+    </div>
+
+    <div class="col-3">
+        <div class="div-black div-full-heigth" style="margin-right:1px">
+            Nazwa
+            <br />  
+            materiału - wyrobu - opakowania
+        </div>
+    </div>
+
+    <div class="col-3">
+        <div style="margin-right: 1px">
+            <div class="row no-gutters">
+                <div class="col-12 div-black">
+                    Ilość
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-6">
+                    <div class="div-black div-full-heigth" style="margin-right:1px; margin-top: 1px">
+                        Zadysponowana
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="div-black div-full-heigth" style="margin-right:1px; margin-top: 1px">
+                        j. m.
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="div-black div-full-heigth" style="margin-top: 1px">
+                        Wydana
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-1">
+        <div style="margin-right: 1px">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <div class="div-black">
+                        Cena
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-8">
+                    <div class="border border-dark">
+                        zł
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="border border-dark gr">
+                        gr
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-2">
+        <div class="row no-gutters">
+            <div class="col-12">
+                <div class="div-black" style="margin-right: 1px">
+                    Wartość
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-8">
+                <div class="border border-dark">
+                    zł
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="border border-dark gr" style="margin-right: 1px">
+                    gr
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-1">
+        <div class="div-black div-full-heigth" style="margin-right: 1px; line-height: 1;">
+            Konto.
+            <br />
+            syntet.
+            <br />
+            mater.
+        </div>
+    </div>
+
+    <div class="col-1">
+        <div class="div-black div-full-heigth">
+            Zapas
+            <br />
+            ilość
+        </div>
+    </div>
+
+</div>
+
+<div class="row no-gutters text-center row-height">
+    <div class="col-1 border-black div-full-heigth">
+        
+    </div>
+
+    <div class="col-3 border-black div-full-heigth">
+
+    </div>
+
+    <div class="col-3">
+        <div class="row no-gutters" style="height: 100%; width: 100%">
+            <div class="col-6 border-black div-full-heigth">
+
+            </div>
+            <div class="col-3 border-black div-full-heigth">
+
+            </div>
+            <div class="col-3 border-black div-full-heigth">
+
+            </div>
+        </div>
+    </div>
+    <div class="col-1">
+        <div class="row no-gutters" style="height: 100%; width: 101%">
+            <div class="col-8 border-black div-full-heigth">
+                
+            </div>
+            <div class="col-4 border-black div-full-heigth gr">
+                
+            </div>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="row no-gutters" style="height: 100%; width: 101%">
+            <div class="col-8 border-black div-full-heigth">
+
+            </div>
+            <div class="col-4 border-black div-full-heigth gr">
+
+            </div>
+        </div>
+    </div>
+    <div class="col-1 border-black div-full-heigth">
+
+    </div>
+    <div class="col-1 border-black div-full-heigth">
+
+    </div>
+</div>
+
+<div class="row no-gutters mt-2">
+
+    <div class="col-2">
+        <div class="row no-gutters div-name border-black">
+            Wystawił
+        </div>
+
+        <div class="row no-gutters border-black wystawil-height">
+
+        </div>
+    </div>
+
+    <div class="col-2">
+        <div class="margin-left-footer">
+            <div class="row no-gutters div-name border-black">
+                Zatwierdził
+            </div>
+
+            <div class="row no-gutters border-black zatwierdzil-height">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4">
+        <div class="margin-left-footer">
+            <div class="row no-gutters div-black">
+                Wymienione ilości
+            </div>
+            <div class="row no-gutters">
+
+                <div class="col-4">
+                    <div class="row no-gutters div-name border-black">
+                        Wydał
+                    </div>
+
+                    <div class="row no-gutters border-black wydal-height">
+
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="row no-gutters div-name border-black">
+                        Data
+                    </div>
+
+                    <div class="row no-gutters border-black data-height">
+
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="row no-gutters div-name border-black">
+                        Odebrał
+                    </div>
+
+                    <div class="row no-gutters border-black odebral-height">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4">
+        <div class="margin-left-footer">
+            <div class="row no-gutters div-name border-black">
+                Ewidencja ilościowo-warościowa
+            </div>
+
+            <div class="row no-gutters border-black ewidencja-height">
+
+            </div>
+        </div>
+    </div>
+
+</div>

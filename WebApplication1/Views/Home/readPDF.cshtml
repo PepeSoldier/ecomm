@@ -1,0 +1,105 @@
+﻿@using WebApplication1.Controllers;
+@using WebApplication1.Models;
+
+@{
+    ViewBag.Title = "readPDF";
+    Faktury faktury = @ViewBag.faktury;
+    //Faktura faktura = @ViewBag.Faktura;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>read PDF</title>
+</head>
+<body>
+    @foreach (Faktura f in faktury.ListaFaktur)
+    {
+        <br />
+        <b>Numer Faktury: </b>@f.Numer<br /><br />
+
+        <b>Pozycje Faktury:</b><br />
+
+        <table style="width:100%" border="1">
+            <tr>
+                <th>Lp.</th>
+                <th>Symbol</th>
+                <th>Nazwa</th>
+                <th>J.m.</th>
+                <th>Ilość</th>
+                <th>Cena jedn. netto</th>
+                <th>Stawka VAT</th>
+                <th>Wartość netto</th>
+                <th>Wartość VAT</th>
+                <th>Wartość brutto towaru / usługi</th>
+            </tr>
+
+            @foreach (FakturaPozycja pf in f.Pozycje)
+            {
+
+                <tr>
+                    <th>@pf.Lp</th>
+                    <th>@pf.Symbol</th>
+                    <th>@pf.Nazwa</th>
+                    <th>@pf.Jm</th>
+                    <th>@pf.Ilosc</th>
+                    <th>@pf.CenaJednostkowa</th>
+                    <th>@pf.VAT</th>
+                    <th>@pf.WartoscNetto</th>
+                    <th>@pf.WartoscVAT</th>
+                    <th>@pf.WartoscBrutto</th>
+
+                </tr>
+
+            }
+
+        </table>
+    }
+
+
+
+    @*
+        @ViewBag.pdfData
+
+        <b>Numer Faktury: </b>@faktura.Numer<br /><br />
+
+        <b>Pozycje Faktury:</b><br />
+
+        <table style="width:100%" border="1">
+            <tr>
+                <th>Lp.</th>
+                <th>Symbol</th>
+                <th>Nazwa</th>
+                <th>J.m.</th>
+                <th>Ilość</th>
+                <th>Cena jedn. netto</th>
+                <th>Stawka VAT</th>
+                <th>Wartość netto</th>
+                <th>Wartość VAT</th>
+                <th>Wartość brutto towaru / usługi</th>
+            </tr>
+
+            @foreach (PozycjaFaktury pf in faktura.Pozycje)
+            {
+
+                <tr>
+                    <th>@pf.Lp</th>
+                    <th>@pf.Symbol</th>
+                    <th>@pf.Nazwa</th>
+                    <th>@pf.Jm</th>
+                    <th>@pf.Ilosc</th>
+                    <th>@pf.CenaJednostkowa</th>
+                    <th>@pf.VAT</th>
+                    <th>@pf.WartoscNetto</th>
+                    <th>@pf.WartoscVAT</th>
+                    <th>@pf.WartoscBrutto</th>
+
+                </tr>
+
+            }
+
+        </table>
+    *@
+</body>
+</html>

@@ -1,0 +1,121 @@
+﻿
+@{
+    ViewBag.Title = "Tabelka";
+}
+
+<style>
+    .etykieta
+    {
+        width: 1058px;
+        height: 675px;
+    }
+
+    .centered-text
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .border-black
+    {
+        border: 1px solid black;
+    }
+
+    .text-white
+    {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .firstrow-heigth
+    {
+        height: 75px;
+    }
+
+    .secondrow-heigth, .thirdrow-heigth, .fifthrow-heigth, .sixthrow-heigth
+    {
+        height: 150px;
+    }
+
+    .div-name
+    {
+        height: 18%;
+    }
+
+    .div-value
+    {
+        height: 82%;
+    }
+
+    .font-lokacja
+    {
+        font-size: 36px;
+    }
+
+    .font-opis, .font-data, .font-zmiana, .font-ilosc, .font-operator, .font-kreskowy, .font-maxilosc
+    {
+        font-size: 64px;
+    }
+</style>
+
+<h2>View</h2>
+
+<div class="etykieta">
+    <div class="row no-gutters firstrow-heigth">
+        <div class="col-3 border-black">LOGO</div>
+        <div class="col-3 border-black centered-text">KOD KRESKOWY</div>
+        <div class="col-6 border-black centered-text">MAX ILOSC W OPAKOWANIU</div>
+    </div>
+
+    <div class="row no-gutters secondrow-heigth">
+        <div class="col-6 border-black font-kreskowy centered-text"></div>
+        <div class="col-6 border-black font-maxilosc centered-text"></div>
+    </div>
+
+    <div class="row no-gutters thirdrow-heigth">
+
+        <div class="col-7 border-black">
+            <div class="col-12 text-center div-name">KOD MATERIAŁU</div>
+            <div class="col-12 font-weight-bold div-value centered-text" style="font-size: 106px; line-height: 0px">E32536290</div>
+        </div>
+
+        <div class="col-5">
+            <div class="col-12 border-black div-name">LOKACJA</div>
+            <div class="col-12 text-white font-weight-bold centered-text div-value text-center font-lokacja">GIĘTARKI TECHNOLOGIA</div>
+        </div>
+
+    </div>
+
+    <div class="row no-gutters fifthrow-heigth border-black">
+
+        <div class="col-12 div-name">OPIS MATERIAŁU</div>
+        <div class="col-12 font-weight-bold div-value centered-text font-opis">Opis</div>
+
+    </div>
+
+
+    <div class="row no-gutters sixthrow-heigth">
+
+        <div class="col-4 border-black text-center">
+            <div class="col-12 div-name">DATA</div>
+            <div class="col-12 font-weight-bold div-value centered-text font-data">05/03/20</div>
+        </div>
+
+        <div class="col-1 border-black text-center">
+            <div class="col-12 div-name">ZMIANA</div>
+            <div class="col-12 font-weight-bold div-value centered-text font-zmiana">I</div>
+        </div>
+
+        <div class="col-5 border-black text-center">
+            <div class="col-12 div-name">ILOŚĆ</div>
+            <div class="col-12 font-weight-bold div-value centered-text font-ilosc">1651</div>
+        </div>
+
+        <div class="col-2 border-black text-center">
+            <div class="col-12 div-name">OPERATOR</div>
+            <div class="col-12 font-weight-bold div-value centered-text font-operator">523</div>
+        </div>
+
+    </div>
+</div>
